@@ -1,0 +1,41 @@
+ 깃허브 데스크탑 설치  >> https://git-scm.com/download/win
+
+0. 깃회원가입  >> https://github.com/sazmoto
+
+1. git 설치 
+
+2. e드라이브에 폴더설치함  >> E:\anna(UIUX)\★git\anna_test
+
+3. 폴더 우클릭>git bash 클릭 >>cmd 창 뜨면 입력하기.
+>> git init  >>폴더에 숨겨진 파일에 .git생김
+>> git remote add origin https://github.com/sazmoto/anna_test.git  (내가만든 저장소주조 my repository )
+
+4. push 전에 pull 이 있다. 중요 명령어
+
+[pull]	
+ git pull origin master >> 지정해놓은 repository 자료를 한번에 끌어오기 명령어
+
+[push]
+ git status >> 현재 git과의 상태 명령어
+
+ git add . >> 변경된 파일 모두 tracking
+
+ git commit -m "message" >> 인식할 수 있는 commit을 달아줌
+
+ git push origin +master >> 실제로 git push
+
+--------------------------------------------------
+
+respositoty에 아무것도 없느니 폴더에서 git bash 오른쪽마우스 클릭해서  cmd창 연 후에
+
+>> git status 입력하면...
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+>> 폴더안에 test.txt란 파일이 respository안엔 포함되어있지 않다고 뜸.(git폴더안에 text.text파일을 임시로 만든상태임)
+
+>> 그럼 test.txt파일을 포함하기위해 ..(그외에 등등 )
+
+>> git add . 을 입력한다!
+
